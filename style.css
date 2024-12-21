@@ -795,7 +795,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("/img/tie_down_system.png");
+  background: url("img/tie_down_system.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
