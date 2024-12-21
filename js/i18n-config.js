@@ -8,7 +8,7 @@ i18next
     // lng: 'en',
     fallbackLng: 'en',
     backend: {
-      loadPath: '/locales/{{lng}}.json'
+      loadPath: 'locales/{{lng}}.json'
     },
     interpolation: {
       escapeValue: false
@@ -19,21 +19,3 @@ i18next
   });
 
 export default i18next;
-
-
-// function updateContent() {
-//   document.querySelectorAll('[data-i18n]').forEach(element => {
-//     element.textContent = i18next.t(element.getAttribute('data-i18n'));
-//   });
-//
-//   document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-//     element.setAttribute('placeholder', i18next.t(element.getAttribute('data-i18n-placeholder')));
-//   });
-// }
-//
-// document.getElementById('language-switch').addEventListener('click', () => {
-//   console.log('i18next.language', i18next.language);
-//   const newLang = i18next.language === 'en' ? 'es' : 'en';
-//   i18next.changeLanguage(newLang, updateContent);
-//   document.getElementById('language-switch').textContent = newLang.toUpperCase();
-// });

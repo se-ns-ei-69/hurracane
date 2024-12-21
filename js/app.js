@@ -1,63 +1,90 @@
 import i18next from './i18n-config.js';
 
-let currentIndex = 0;
-const slides = document.querySelectorAll('.slide-container');
-const totalSlides = slides.length;
+export function updateContent() {
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    element.textContent = i18next.t(element.getAttribute('data-i18n'));
+  });
 
-document.querySelector('.prev-btn').addEventListener('click', () => {
-  currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
-  updateSlider();
-});
-
-document.querySelector('.next-btn').addEventListener('click', () => {
-  currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
-  updateSlider();
-});
-
-function updateSlider() {
-  const offset = -currentIndex * 100;
-  document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+    element.setAttribute('placeholder', i18next.t(element.getAttribute('data-i18n-placeholder')));
+  });
 }
 
-// Auto-slide
-setInterval(() => {
-  currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
-  updateSlider();
-}, 3000);
-
-const cardContainerObserver = document.getElementById('cards-container');
-const cards = document.querySelectorAll('.card');
-
-const cardsObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      cards.forEach(el => {
-        el.classList.add('show')
-      })
-      observer.unobserve(entry.target);
-    } else {
-      cards.forEach(el => {
-        el.classList.remove('show')
-      })
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  console.log('DOMContentLoaded')
+  // Инициализация аватаров
+  document.querySelectorAll('.avatar-wrapper').forEach(function (avatar) {
+    const imageUrl = avatar.getAttribute('data-avatar-url');
+    avatar.style.setProperty('--avatar-url', `url(${imageUrl})`);
   });
-}, {
-  threshold: 0.2
-});
 
-cardsObserver.observe(cardContainerObserver)
+  // Слайдер
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide-container');
+  const totalSlides = slides.length;
 
-document.addEventListener("DOMContentLoaded", function () {
+  const updateSlider = () => {
+    const offset = -currentIndex * 100;
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+  };
+
+  document.querySelector('.prev-btn').addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+    updateSlider();
+  });
+
+  document.querySelector('.next-btn').addEventListener('click', () => {
+    currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+    updateSlider();
+  });
+
+  // Auto-slide
+  setInterval(() => {
+    currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+    updateSlider();
+  }, 3000);
+
+  // Анимация карточек
+  const cardsObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll('.card').forEach(card => card.classList.add('show'));
+        observer.unobserve(entry.target);
+      } else {
+        document.querySelectorAll('.card').forEach(card => card.classList.remove('show'));
+      }
+    });
+  }, { threshold: 0.2 });
+
+  const cardContainerObserver = document.getElementById('cards-container');
+  if (cardContainerObserver) {
+    cardsObserver.observe(cardContainerObserver);
+  }
+
+  const ctaButton = document.querySelector(".animated-button");
+
+  const ctaButtonObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        ctaButton.classList.add("active");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  ctaButtonObserver.observe(ctaButton);
+
+  // Шаги формы
   const steps = document.querySelectorAll(".form-step");
   const progressSteps = document.querySelectorAll(".progress-step");
   let currentStep = 0;
 
-  function showStep(index) {
+  const showStep = (index) => {
     steps.forEach((step, idx) => {
       step.classList.toggle("active", idx === index);
       progressSteps[idx].classList.toggle("completed", idx <= index);
     });
-  }
+  };
 
   document.querySelectorAll(".next-step").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -78,111 +105,123 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   showStep(currentStep);
-});
 
-const headers = document.querySelectorAll('.anim-header');
-
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.1
-};
-
-const handleIntersection = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-};
-
-const observer = new IntersectionObserver(handleIntersection, options);
-
-headers.forEach(header => {
-  observer.observe(header);
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const observerOptions = {
-    root: null,
-    threshold: 0.3,
-  };
-
-  const productCards = document.querySelectorAll(".service");
-  const observer = new IntersectionObserver((entries, observer) => {
+  // Анимация заголовков
+  const headers = document.querySelectorAll('.anim-header');
+  const headerObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("animate");
-
+        entry.target.classList.add('visible');
         observer.unobserve(entry.target);
       }
     });
-  }, observerOptions);
+  }, { threshold: 0.1 });
 
-  productCards.forEach(card => observer.observe(card));
-});
+  headers.forEach(header => headerObserver.observe(header));
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Анимация товаров
+  const productCards = document.querySelectorAll(".service");
+  const productCardsObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  productCards.forEach(card => productCardsObserver.observe(card));
+
+  // Анимация заголовков с span
   const titles = document.querySelectorAll(".animated-title");
-
-  const observer = new IntersectionObserver((entries, observer) => {
+  const titleObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const spans = entry.target.querySelectorAll("span");
-
         spans.forEach((span, index) => {
           span.style.transitionDelay = `${index * 0.2}s`;
         });
-
         entry.target.classList.add("animate");
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.5 });
 
-  titles.forEach(title => observer.observe(title));
-});
+  titles.forEach(title => titleObserver.observe(title));
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Анимация primary-square
   const animatedBlocks = document.querySelectorAll(".primary-square");
+  const blockObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        blockObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.2,
-    }
-  );
+  animatedBlocks.forEach((block) => blockObserver.observe(block));
 
-  animatedBlocks.forEach((block) => observer.observe(block));
+  // Переключение языка
+  const button = document.getElementById('language-switch');
+  const buttonTitle = document.getElementById('language-switch-text');
+  const handleLanguageSwitch = () => {
+    const newLang = i18next.language === 'en' ? 'es' : 'en';
+    i18next.changeLanguage(newLang, updateContent).then(() => {
+      buttonTitle.textContent = newLang.toUpperCase();
+    });
+  };
+
+  button.addEventListener('click', handleLanguageSwitch);
+
+  // Dropdown
+  const dropdown = document.querySelector(".dropdown");
+  const dropdownButton = dropdown?.querySelector(".dropdown-button");
+
+  if (dropdownButton) {
+    dropdownButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      dropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("open");
+      }
+    });
+  }
+
+  const checkboxes = dropdown?.querySelectorAll('input[type="checkbox"]');
+  checkboxes?.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const selectedServices = Array.from(checkboxes)
+        .filter((cb) => cb.checked)
+        .map((cb) => cb.value);
+      console.log("Выбранные услуги:", selectedServices);
+    });
+  });
+}, { once: true });
+
+const burgerMenu = document.getElementById('burger-menu');
+const navigation = document.getElementById('nav');
+const body = document.body;
+
+burgerMenu.addEventListener('click', function () {
+  navigation.classList.toggle('open');
+  burgerMenu.classList.toggle('open');
+
+  if (burgerMenu.classList.contains('open')) {
+    body.classList.add('disable-scroll');
+  } else {
+    body.classList.remove('disable-scroll');
+  }
 });
 
-export function updateContent() {
-  document.querySelectorAll('[data-i18n]').forEach(element => {
-    element.textContent = i18next.t(element.getAttribute('data-i18n'));
+const menuLinks = document.querySelectorAll('.menu-link');
+menuLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    navigation.classList.remove('open');
+    burgerMenu.classList.remove('open');
+    body.classList.remove('disable-scroll');
   });
-
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-    element.setAttribute('placeholder', i18next.t(element.getAttribute('data-i18n-placeholder')));
-  });
-}
-const button = document.getElementById('language-switch');
-
-const handleLanguageSwitch = (e) => {
-  e.stopPropagation()
-  const newLang = i18next.language === 'en' ? 'es' : 'en';
-  i18next.changeLanguage(newLang, updateContent).then(() => {
-    button.textContent = newLang.toUpperCase();
-  });
-};
-
-button.removeEventListener('click', handleLanguageSwitch);
-button.addEventListener('click', handleLanguageSwitch);
+});
