@@ -11,13 +11,6 @@ export function updateContent() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log('DOMContentLoaded')
-  // Инициализация аватаров
-  // document.querySelectorAll('.avatar-wrapper').forEach(function (avatar) {
-  //   const imageUrl = avatar.getAttribute('data-avatar-url');
-  //   avatar.style.setProperty('--avatar-url', `url(${imageUrl})`);
-  // });
-
   // Слайдер
   let currentIndex = 0;
   const slides = document.querySelectorAll('.slide-container');
@@ -135,19 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (serviceContainerObserver) {
     serviceObserver.observe(serviceContainerObserver);
   }
-
-  // Анимация товаров
-  // const productCards = document.querySelectorAll(".service");
-  // const productCardsObserver = new IntersectionObserver((entries, observer) => {
-  //   entries.forEach(entry => {
-  //     if (entry.isIntersecting) {
-  //       entry.target.classList.add("animate");
-  //       observer.unobserve(entry.target);
-  //     }
-  //   });
-  // }, { threshold: 0.1 });
-  //
-  // productCards.forEach(card => productCardsObserver.observe(card));
 
   // Анимация заголовков с span
   const titles = document.querySelectorAll(".animated-title");
