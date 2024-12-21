@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "TieDownHome"
+    "title": "Hurricane solutions"
   },
   "nav": {
     "products": "Products",
@@ -8,45 +8,45 @@
     "about": "About Us"
   },
   "button": {
-    "language": "ES"
+    "language": "ES",
+    "contact-us": "Contact Us",
+    "learn-more": "Learn more"
   },
   "hero": {
-    "title1": "Your",
-    "title2": "Home,",
-    "title3": "Shield,",
-    "title4": "Safety",
-    "description": "Protect your home, vehicles, and boats with hurricane-resistant solutions designed to withstand nature's fury. Trust the experts in durable protection.",
-    "button": "Get a Free Quote Today"
+    "title": "Built for Storms, Designed for Safety",
+    "description": "Protect your property with expert hurricane-proof solutions.",
+    "button": "Get Protected Today"
   },
   "services": {
     "header": "Our Services",
-    "description": "We provide reliable solutions to safeguard your home and property from extreme weather.",
+    "description": "We provide reliable solutions to safeguard your home and property from extreme weather.From tie-down straps systems and impact windows & doors to shutters and fences, our services ensure safety and durability.Trust the professionals who put your protection first!",
+    "button": "Learn more",
     "tie_down": "Tie-Down Straps Systems",
-    "tie_down_desc": "Protect your mobile homes with high-quality tie-down systems.",
+    "tie_down_desc": "Tie-down straps systems to protect mobile homes.",
     "gates_fences": "Gates & Fences",
     "gates_fences_desc": "Secure and durable gates and fences for every need.",
     "windows_shutters": "Windows Shutters",
-    "windows_shutters_desc": "High-quality shutters for storm and privacy protection.",
+    "windows_shutters_desc": "Durable shutters for window protection.",
     "impact_windows": "Impact Windows & Doors",
-    "impact_windows_desc": "Resilient windows and doors to withstand storms."
+    "impact_windows_desc": "Strong windows and doors for storms."
   },
   "why_us": {
     "header": "Why Choose Us?",
-    "description": "We ensure reliable protection with expertise and dedication.",
+    "description": "Welcome to Hurricane solutions, where our skilled professionals are committed to protecting your mobile home from hurricanes and flooding. Don’t wait for the next storm—act now to secure your home and safeguard what matters most!",
     "affordable": "Affordable Prices",
-    "affordable_desc": "Quality solutions at competitive prices to fit your budget.",
+    "affordable_desc": "Our competitive prices reflect our commitment to the community, helping you save on home insurance by providing a safe and reliable structure for your property.",
     "reliable": "Reliable Service",
-    "reliable_desc": "We prioritize timely and efficient service for every project.",
+    "reliable_desc": "We take our responsibilities seriously. Our clients expect us to be on time and deliver quality work. We ensure every job is completed efficiently and to the highest standards.",
     "satisfaction": "Customer Satisfaction",
-    "satisfaction_desc": "Dedicated to delivering outstanding results to our clients.",
+    "satisfaction_desc": "We listen carefully to our clients and their needs, working hard to deliver the best results. With our dedication to excellence, we’ve earned a 5-star rating from our satisfied customers.",
     "shipping": "Easy Shipping",
-    "shipping_desc": "Fast and reliable shipping across the USA."
+    "shipping_desc": "We offer fast and hassle-free shipping across the USA, ensuring timely delivery of our products. Whether for local or nationwide orders, we make the process simple and efficient."
   },
   "tie_down": {
     "header": "What is a Tie-Down Straps System and Why You Need It",
     "protect": {
       "header": "Protect Your Home Today",
-      "description": "Welcome to TieDownHome, where our skilled professionals are committed to protecting your mobile home from hurricanes and flooding. Don’t wait for the next storm—act now to secure your home and safeguard what matters most!"
+      "description": "Welcome to Hurricane Solutions, where our skilled professionals are committed to protecting your mobile home from hurricanes and flooding. Don’t wait for the next storm—act now to secure your home and safeguard what matters most!"
     },
     "expert": {
       "header": "Expert Solutions",
@@ -58,21 +58,48 @@
     }
   },
   "products": {
+    "title": "Products",
     "tie_down": {
       "header": "Tie-Down Straps System",
-      "description": "Our company provides anchoring services for sheds, boats, and vehicles. We secure boats on trailers to protect them from strong winds and storms, as well as anchor sheds and outbuildings."
+      "overview": {
+        "part1": "shed,",
+        "part2": "boat, rv,",
+        "part3": "etc."
+      },
+      "description": "Our company also provides anchoring services for sheds, boats, and vehicles. We secure boats on trailers to protect them from strong winds and storms, as well as anchor sheds and outbuildings. Additionally, we secure vehicles to prevent damage during hurricanes or floods."
     },
     "windows_shutters": {
       "header": "Windows Shutters",
-      "description": "Our used/refurbished Storm Panel Hurricane Shutters are significantly more affordable than new ones while still providing the same level of protection."
+      "overview": {
+        "part1": "shield",
+        "part2": "you",
+        "part3": "home"
+      },
+      "table": {
+        "title": "Price",
+        "header1": "Length",
+        "header2": "Stainless Steel",
+        "header3": "Aluminum"
+      },
+      "description": "Our used/refurbished Storm Panel Hurricane Shutters are significantly more affordable than new ones—up to eight times cheaper than those at Home Depot or Lowe’s—while still providing the same level of protection."
     },
     "impact_windows": {
       "header": "Impact Windows & Doors",
-      "description": "We provide high-quality, energy-efficient impact windows and doors that withstand the toughest weather conditions."
+      "overview": {
+        "part1": "storm-",
+        "part2": "ready",
+        "part3": "solutions."
+      },
+      "description": "At Hurricane Solutions, we provide energy-efficient impact windows and doors that enhance your home’s beauty, comfort, and value. Our durable, hurricane-resistant solutions ensure peace of mind during storms. We proudly offer these premium products at competitive prices, making it easier to invest in your home."
     },
     "gates_fences": {
       "header": "Gates and Fences",
-      "description": "We repair and upgrade electric gates to ensure security and convenience for residential and commercial properties."
+      "overview": {
+        "part1": "solid",
+        "part2": "and secure",
+        "part3": "build."
+      },
+      "description": "At Premier Gate Solutions, we repair and upgrade electric gates to ensure security and convenience. From hinge and roller replacements to safety sensor and keypad installations, we handle all types of malfunctions. Trust our experts to restore your gate’s functionality quickly and efficiently."
     }
   },
   "contact": {
@@ -98,9 +125,22 @@
       "submit": "Submit"
     }
   },
+  "contacts": {
+    "header": "Contact Us",
+    "phone-label": "Phone",
+    "email-label": "Email",
+    "address-title": "Address"
+  },
+  "assessments": {
+    "header": "What Our Clients Say?",
+    "description": "",
+    "assessment1": "I would like to express my heartfelt gratitude to John and Alex for the delivery and installation of the shutters in my home. They are incredibly pleasant and professional individuals who completed the job quickly and with great quality, all at a very reasonable price. I highly recommend their services to all my friends! Thank you once again!",
+    "assessment2": "I had a great experience with John and his team. After my insurance premium increased due to not having window shutters, John installed aluminum shutters and recommended an insurance company. I ended up paying less for my insurance than the previous year! Highly recommend! Thank you, John!",
+    "assessment3": "I am a handyman and have been collaborating with this team since 2023. I have purchased shutters and tracks from them over 30 times, and they have always provided exactly what I needed. It’s such a relief to have found these guys! Highly recommend them to anyone in need of shutters!"
+  },
   "about": {
     "header": "About Us",
-    "description": "TieDownHome specializes in securing what matters most—offering solutions like tie-downs for sheds, boats, and RVs, hurricane shutters, impact-resistant windows and doors, as well as durable gates and fences.",
+    "description": "Hurricane solutions specializes in securing what matters most—offering solutions like tie-downs for sheds, boats, and RVs, hurricane shutters, impact-resistant windows and doors, as well as durable gates and fences.",
     "trust": {
       "header": "A Heritage Built on Trust",
       "description": "Founded by a team of professionals, our company is a trusted name in the industry. With roots in Russia, our leadership has been active since 2008, cultivating a reputation for excellence."
@@ -116,6 +156,6 @@
     "commitment": "We’re committed to protecting your property against nature’s toughest challenges."
   },
   "footer": {
-    "title": "TIEDOWNHOME"
+    "title": "Hurricane solutions"
   }
 }
