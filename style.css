@@ -1201,7 +1201,7 @@ section {
   content: "";
   border: 4px solid #1a1a1a;
   background-color: white;
-  background-image: var(--avatar-url);
+  /*background-image: var(--avatar-url);*/
   background-size: cover;
   overflow: hidden;
   border-radius: 50%;
@@ -1210,6 +1210,18 @@ section {
   left: 5px;
   right: 5px;
   bottom: 5px;
+}
+
+.avatar-wrapper.img-1::before {
+  background-image: url("img/avatar_1.jpeg");
+}
+
+.avatar-wrapper.img-2::before {
+  background-image: url("img/avatar_4.png");
+}
+
+.avatar-wrapper.img-3::before {
+  background-image: url("img/avatar_3.jpeg");
 }
 
 .author-img-container {

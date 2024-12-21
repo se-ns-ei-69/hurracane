@@ -1,4 +1,4 @@
-import i18next from "./i18n-config";
+import i18next from "./i18n-config.js";
 
 export function updateContent() {
   document.querySelectorAll('[data-i18n]').forEach(element => {
