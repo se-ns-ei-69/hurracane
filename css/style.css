@@ -1010,6 +1010,10 @@ section {
   overflow: hidden;
 }
 
+.product-card-description {
+  font-size: 16px;
+}
+
 .price-title {
   font-size: 48px
 }
