@@ -13,10 +13,10 @@ export function updateContent() {
 document.addEventListener("DOMContentLoaded", () => {
   console.log('DOMContentLoaded')
   // Инициализация аватаров
-  document.querySelectorAll('.avatar-wrapper').forEach(function (avatar) {
-    const imageUrl = avatar.getAttribute('data-avatar-url');
-    avatar.style.setProperty('--avatar-url', `url(${imageUrl})`);
-  });
+  // document.querySelectorAll('.avatar-wrapper').forEach(function (avatar) {
+  //   const imageUrl = avatar.getAttribute('data-avatar-url');
+  //   avatar.style.setProperty('--avatar-url', `url(${imageUrl})`);
+  // });
 
   // Слайдер
   let currentIndex = 0;
@@ -120,17 +120,34 @@ document.addEventListener("DOMContentLoaded", () => {
   headers.forEach(header => headerObserver.observe(header));
 
   // Анимация товаров
-  const productCards = document.querySelectorAll(".service");
-  const productCardsObserver = new IntersectionObserver((entries, observer) => {
+  const serviceObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("animate");
+        document.querySelectorAll('.service').forEach(service => service.classList.add('animate'));
         observer.unobserve(entry.target);
+      } else {
+        document.querySelectorAll('.service').forEach(service => service.classList.remove('animate'));
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.2 });
 
-  productCards.forEach(card => productCardsObserver.observe(card));
+  const serviceContainerObserver = document.getElementById('services');
+  if (serviceContainerObserver) {
+    serviceObserver.observe(serviceContainerObserver);
+  }
+
+  // Анимация товаров
+  // const productCards = document.querySelectorAll(".service");
+  // const productCardsObserver = new IntersectionObserver((entries, observer) => {
+  //   entries.forEach(entry => {
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add("animate");
+  //       observer.unobserve(entry.target);
+  //     }
+  //   });
+  // }, { threshold: 0.1 });
+  //
+  // productCards.forEach(card => productCardsObserver.observe(card));
 
   // Анимация заголовков с span
   const titles = document.querySelectorAll(".animated-title");
