@@ -18,6 +18,7 @@
   --font-size-large: 62px;
   --font-size-medium: 18px;
   --font-size-small: 14px;
+  --avatar-url: '';
 }
 
 html {
@@ -794,7 +795,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("img/tie_down_system.png");
+  background: url("/img/tie_down_system.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1196,6 +1197,7 @@ section {
   padding: 5px;
   position: relative;
 }
+
 .avatar-wrapper::before {
   content: "";
   border: 4px solid #1a1a1a;
