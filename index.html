@@ -326,25 +326,25 @@
           </div>
         </div>
         <div id="windows_shutters" class="product-layout">
-            <div class="product-card header-product-card">
-              <h2 data-i18n="products.windows_shutters.header" class="product-title">Windows Shutters</h2>
-              <p class="product-card-description" data-i18n="products.windows_shutters.description">
-                Our used/refurbished Storm Panel Hurricane Shutters are significantly more affordable than new ones—up to
-                eight times cheaper than those at Home Depot or Lowe’s—while still providing the same level of protection.
-              </p>
+          <div class="product-card header-product-card">
+            <h2 data-i18n="products.windows_shutters.header" class="product-title">Windows Shutters</h2>
+            <p class="product-card-description" data-i18n="products.windows_shutters.description">
+              Our used/refurbished Storm Panel Hurricane Shutters are significantly more affordable than new ones—up to
+              eight times cheaper than those at Home Depot or Lowe’s—while still providing the same level of protection.
+            </p>
+          </div>
+          <div class="primary-square product-card">
+            <div class="line">
+              <p data-i18n="products.windows_shutters.overview.part1" class="line-part">shield</p>
             </div>
-            <div class="primary-square product-card">
-              <div class="line">
-                <p data-i18n="products.windows_shutters.overview.part1" class="line-part">shield</p>
-              </div>
-              <div class="line">
-                <p data-i18n="products.windows_shutters.overview.part2" class="line-part">you</p>
-              </div>
-              <div class="line">
-                <p data-i18n="products.windows_shutters.overview.part3" class="line-part">home</p>
-              </div>
+            <div class="line">
+              <p data-i18n="products.windows_shutters.overview.part2" class="line-part">you</p>
             </div>
-            <img class="shutters-photo product-card" src="img/shutter.PNG" alt="Detail Image">
+            <div class="line">
+              <p data-i18n="products.windows_shutters.overview.part3" class="line-part">home</p>
+            </div>
+          </div>
+          <img class="shutters-photo product-card" src="img/shutters_image_3.jpeg" alt="Detail Image">
           <div class="product-card table-wrapper">
             <h2 class="price-title" data-i18n="products.windows_shutters.table.title" >Price</h2>
             <table class="shutters-table">
@@ -451,6 +451,7 @@
               </tbody>
             </table>
           </div>
+          <img class="shutters-photo product-card" src="img/shutter.PNG" alt="Detail Image">
           <img class="shutters-photo product-card" src="img/shutters_2.jpeg" alt="Detail Image">
         </div>
         <div id="impact_window_product" class="product-layout">
@@ -580,30 +581,31 @@
                 <div class="progress-line active"></div>
               </div>
               <div class="progress-step">
-                <span>2. Service Inquired</span>
+                <span>2. Service Inquired <strong>(optional)</strong></span>
                 <div class="progress-line"></div>
               </div>
             </div>
             <form id="multiStepForm">
               <div class="form-step active" data-step="1">
                 <div class="form-row">
-                  <label>
+                  <label class="input-label" is-req="required">
+<!--                    <span>First Name</span>-->
                     <input type="text" class="form-input" placeholder="First Name" required />
                   </label>
-                  <label>
+                  <label class="input-label" is-req="required">
                     <input type="text" class="form-input" placeholder="Last Name" required />
                   </label>
                 </div>
                 <div class="form-row">
-                  <label>
+                  <label class="input-label" is-req="required">
                     <input type="tel" class="form-input" placeholder="Phone number" required />
                   </label>
-                  <label>
+                  <label class="input-label" is-req="required">
                     <input type="email" class="form-input" placeholder="Email" required />
                   </label>
                 </div>
                 <div class="form-row">
-                  <label>
+                  <label class="input-label" is-req="required">
                     <input type="text" class="form-input" placeholder="Zip code" required />
                   </label>
                 </div>
@@ -632,6 +634,11 @@
                       </label>
                     </div>
                   </div>
+                </div>
+                <div class="form-row">
+                  <label>
+                    <textarea placeholder="Message" class="form-input" cols="30" rows="10"></textarea>
+                  </label>
                 </div>
                 <div class="form-row">
                   <label>
@@ -684,11 +691,25 @@
                 <img src="img/pin.svg" alt="Pin Image" width="50">
                 <div class="contact-item-content">
                   <span data-i18n="contacts.address-title" class="contact-title">Address</span>
+                  <span>3090 Sheridan street,</span>
+                  <span>Hollywood,</span>
+                  <span>FL 33021, USA</span>
+                  <br/>
                   <span>7901 4th St N, Ste 14685,</span>
                   <span>St. Petersburg,</span>
                   <span>FL 33702, USA</span>
                 </div>
+
               </div>
+<!--              <div class="contact-item">-->
+<!--                <img src="img/pin.svg" alt="Pin Image" width="50">-->
+<!--                <div class="contact-item-content">-->
+<!--                  <span data-i18n="contacts.address-title" class="contact-title">Address</span>-->
+<!--                  <span>7901 4th St N, Ste 14685,</span>-->
+<!--                  <span>St. Petersburg,</span>-->
+<!--                  <span>FL 33702, USA</span>-->
+<!--                </div>-->
+<!--              </div>-->
             </div>
             <div class="social-link-wrapper">
               <a class="social-link" target="_blank" href="https://www.facebook.com/profile.php?id=61569848434365">
@@ -756,7 +777,7 @@
                 </div>
                 <div class="about-card-content">
                   <p data-i18n="about.expansion.description">
-                    Since 2022, we have been proud to bring our expertise and commitment to the United States.
+                    Since 2023, we have been proud to bring our expertise and commitment to the United States.
                     Our focus remains on delivering exceptional customer satisfaction while adapting our proven methods
                     to this new market.
                   </p>

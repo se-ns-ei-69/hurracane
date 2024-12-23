@@ -1490,6 +1490,11 @@ section {
     margin: 20px 0;
   }
 }
+textarea.form-input {
+  height: 142px;
+  resize: none;
+  appearance: none;
+}
 .form-input {
   display: flex;
   position: relative;
@@ -1499,14 +1504,22 @@ section {
   border: 1px solid #cfcfcf;
   width: 100%;
 }
-.form-input:required::before{
+.input-label {
+  position: relative;
+  display: flex;
+  /*flex-direction: column;*/
+  /*gap: 0.5rem;*/
+}
+.input-label[is-req="required"]:after {
   content: "*";
   color: red;
   font-size: 22px;
   position: absolute;
-  height: 22px;
-  right: 10px;
-  top: 50%;
+  width: 12px;
+  height: 12px;
+  line-height: 1;
+  right: 8px;
+  top:50%;
   transform: translateY(-50%);
 }
 .form-input:focus, .form-input:hover {
