@@ -1,0 +1,166 @@
+{
+  "site": {
+    "title": "Hurricane solutions"
+  },
+  "nav": {
+    "products": "Productos",
+    "contacts": "Contactos",
+    "about": "Sobre Nosotros"
+  },
+  "button": {
+    "language": "EN",
+    "contact-us": "Contáctanos",
+    "learn-more": "Aprende más"
+  },
+  "hero": {
+    "title": "Construido para tormentas, diseñado para la seguridad",
+    "description": "Protege tu propiedad con soluciones expertas a prueba de huracanes.",
+    "button": "Protégete hoy mismo"
+  },
+  "services": {
+    "header": "Nuestros Servicios",
+    "description": "Ofrecemos soluciones confiables para proteger tu hogar y propiedad contra condiciones climáticas extremas. Desde sistemas de correas de amarre y ventanas y puertas resistentes a impactos hasta persianas y cercas, nuestros servicios garantizan seguridad y durabilidad. ¡Confía en los profesionales que ponen tu protección en primer lugar!",
+    "button": "Aprende más",
+    "tie_down": "Sistemas de Correas de Sujeción",
+    "tie_down_desc": "Sistemas de correas de amarre para proteger casas móviles.",
+    "gates_fences": "Puertas y Cercas",
+    "gates_fences_desc": "Portones y cercas confiables para mayor seguridad.",
+    "windows_shutters": "Persianas para Ventanas",
+    "windows_shutters_desc": "Persianas duraderas para la protección de ventanas.",
+    "impact_windows": "Ventanas y Puertas Antimpacto",
+    "impact_windows_desc": "Ventanas y puertas resistentes para tormentas."
+  },
+  "why_us": {
+    "header": "¿Por Qué Elegirnos?",
+    "description": "Bienvenido a Hurricane solutions, donde nuestros profesionales capacitados están comprometidos a proteger tu casa móvil contra huracanes e inundaciones. ¡No esperes a la próxima tormenta! Actúa ahora para asegurar tu hogar y proteger lo que más importa.",
+    "affordable": "Precios Asequibles",
+    "affordable_desc": "Nuestros precios competitivos reflejan nuestro compromiso con la comunidad, ayudándote a ahorrar en el seguro de tu hogar al ofrecer una estructura segura y confiable para tu propiedad.",
+    "reliable": "Servicio Confiable",
+    "reliable_desc": "Tomamos nuestras responsabilidades en serio. Nuestros clientes esperan que seamos puntuales y entreguemos un trabajo de calidad. Garantizamos que cada trabajo se complete de manera eficiente y con los más altos estándares.",
+    "satisfaction": "Satisfacción del Cliente",
+    "satisfaction_desc": "Escuchamos atentamente a nuestros clientes y sus necesidades, trabajando arduamente para ofrecer los mejores resultados. Con nuestra dedicación a la excelencia, hemos obtenido una calificación de 5 estrellas por parte de nuestros clientes satisfechos.",
+    "shipping": "Envío Rápido",
+    "shipping_desc": "Ofrecemos envíos rápidos y sin complicaciones en todo Estados Unidos, garantizando la entrega puntual de nuestros productos. Ya sea para pedidos locales o nacionales, hacemos que el proceso sea simple y eficiente."
+  },
+  "tie_down": {
+    "header": "¿Qué es un Sistema de Correas de Sujeción y Por Qué Lo Necesitas?",
+    "protect": {
+      "header": "Probando cada anclaje",
+      "description": "Nos esforzamos al máximo en probar cada una de nuestras conexiones para garantizar que cumplan con los más altos estándares de resistencia y durabilidad."
+    },
+    "expert": {
+      "header": "Soluciones Expertas",
+      "description": "Nuestras persianas contra huracanes de panel de tormenta usadas o reacondicionadas son significativamente más económicas que las nuevas: hasta ocho veces más baratas que las de Home Depot o Lowe’s, y aun así ofrecen el mismo nivel de protección."
+    },
+    "assessment": {
+      "header": "Evaluaciones Personalizadas",
+      "description": "Nuestro equipo realiza evaluaciones exhaustivas de tu propiedad, utilizando tecnología de punta y materiales de primera calidad. Este enfoque meticuloso garantiza que tu hogar reciba la protección óptima incluso contra los vientos más fuertes. ¡Contáctanos hoy para una consulta!"
+    }
+  },
+  "products": {
+    "title": "Productos",
+    "tie_down": {
+      "header": "Sistema de Correas de Sujeción",
+      "overview": {
+        "part1": "Cobertizo,",
+        "part2": "embarcación,",
+        "part3": "casa rodante, etc."
+      },
+      "description": "Nuestra empresa también ofrece servicios de anclaje para cobertizos, embarcaciones y vehículos. Aseguramos las embarcaciones en remolques para protegerlas de vientos fuertes y tormentas, además de anclar cobertizos y edificaciones auxiliares. Asimismo, aseguramos vehículos para prevenir daños durante huracanes o inundaciones."
+    },
+    "windows_shutters": {
+      "header": "Persianas para Ventanas",
+      "overview": {
+        "part1": "Protege",
+        "part2": "tu",
+        "part3": "hogar"
+      },
+      "table": {
+        "title": "Precio",
+        "header1": "Longitud",
+        "header2": "Acero inoxidable",
+        "header3": "Aluminio"
+      },
+      "description": "Nuestras persianas contra huracanes de panel de tormenta usadas o reacondicionadas son significativamente más asequibles que las nuevas, hasta ocho veces más baratas que las de Home Depot o Lowe’s, y aún así ofrecen el mismo nivel de protección."
+    },
+    "impact_windows": {
+      "header": "Ventanas y Puertas Antimpacto",
+      "overview": {
+        "part1": "Soluciones",
+        "part2": "listas para",
+        "part3": "tormentas"
+      },
+      "description": "En Hurricane Solutions, ofrecemos ventanas y puertas de impacto energéticamente eficientes que mejoran la belleza, comodidad y valor de tu hogar. Nuestras soluciones duraderas y resistentes a huracanes brindan tranquilidad durante las tormentas. Ofrecemos estos productos premium a precios competitivos, facilitando la inversión en tu hogar."
+    },
+    "gates_fences": {
+      "header": "Puertas y Cercas",
+      "overview": {
+        "part1": "Construcción",
+        "part2": "sólida",
+        "part3": "y segura."
+      },
+      "description": "En Premier Gate Solutions, reparamos y mejoramos portones eléctricos para garantizar seguridad y comodidad. Desde reemplazos de bisagras y rodillos hasta instalaciones de sensores de seguridad y teclados, nos encargamos de todo tipo de fallas. Confía en nuestros expertos para restaurar la funcionalidad de tu portón de manera rápida y eficiente."
+    }
+  },
+  "contact": {
+    "header": "¡Protege tu HOGAR hoy!",
+    "description": "Cuéntanos lo que necesitas y te proporcionaremos la mejor protección para tu propiedad. ¡Obtén una cotización personalizada ahora!",
+    "form": {
+      "step1": "1. Datos personales",
+      "step2": "2. Servicio solicitado (opcional)",
+      "success-header": "¡Gracias!",
+      "success-description": "Tu mensaje ha sido enviado con éxito.",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "phone": "Número de Teléfono",
+      "email": "Correo Electrónico",
+      "zipcode": "Código Postal",
+      "select_product": "Selecciona productos:",
+      "tieDown": "Correas de Sujeción (barco, RV, cobertizo, casa)",
+      "hurricaneShutters": "Persianas Contra Huracanes",
+      "impactWindowsDoors": "Ventanas y Puertas Antimpacto",
+      "gatesFences": "Puertas y Cercas",
+      "message": "Mensaje",
+      "width": "Ancho",
+      "height": "Alto",
+      "length": "Largo",
+      "quantity": "Cantidad",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "submit": "Enviar"
+    }
+  },
+  "contacts": {
+    "header": "Contáctanos",
+    "phone-label": "Teléfono",
+    "email-label": "Correo electrónico",
+    "address-title": "Dirección"
+  },
+  "assessments": {
+    "header": "¿Qué Dicen Nuestros Clientes?",
+    "description": "",
+    "assessment1": "Quiero expresar mi más sincero agradecimiento a John y Alex por la entrega e instalación de las persianas en mi hogar. Son personas increíblemente amables y profesionales que realizaron el trabajo de manera rápida y con gran calidad, todo a un precio muy razonable. ¡Recomiendo mucho sus servicios a todos mis amigos! ¡Gracias una vez más!",
+    "assessment2": "Tuve una excelente experiencia con John y su equipo. Después de que mi prima de seguro aumentara por no tener persianas en las ventanas, John instaló persianas de aluminio y me recomendó una compañía de seguros. ¡Terminé pagando menos por mi seguro que el año anterior! ¡Muy recomendable! ¡Gracias, John!",
+    "assessment3": "Soy un manitas y he estado colaborando con este equipo desde 2023. He comprado persianas y rieles de ellos más de 30 veces, y siempre me han proporcionado exactamente lo que necesitaba. ¡Es un gran alivio haber encontrado a este equipo! ¡Los recomiendo mucho a cualquiera que necesite persianas!"
+  },
+  "about": {
+    "header": "Sobre Nosotros",
+    "description": "Hurricane solutions se especializa en proteger lo que más importa: ofrecemos soluciones como anclajes para cobertizos, barcos y casas rodantes, persianas contra huracanes, ventanas y puertas antimpacto, así como puertas y cercas duraderas.",
+    "trust": {
+      "header": "Un Legado de Confianza",
+      "description": "Fundada por un equipo de profesionales, nuestra compañía es un nombre confiable en la industria. Con raíces en Rusia, operamos desde 2008, construyendo una reputación de excelencia."
+    },
+    "expertise": {
+      "header": "Experiencia en la Industria",
+      "description": "En Rusia, nuestro portafolio incluye empresas exitosas en construcción vial, reparación de maquinaria pesada, servicios de transporte, talleres de soldadura y renovaciones de edificios."
+    },
+    "expansion": {
+      "header": "Expansión Global",
+      "description": "Desde 2023, hemos traído nuestra experiencia y compromiso a los Estados Unidos, enfocados en satisfacer a nuestros clientes con métodos probados y adaptados al nuevo mercado."
+    },
+    "commitment": "Estamos comprometidos a proteger tu propiedad contra los desafíos más duros de la naturaleza."
+  },
+  "footer": {
+    "title": "Hurricane solutions"
+  }
+}
