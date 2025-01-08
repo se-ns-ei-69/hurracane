@@ -1240,15 +1240,15 @@ section {
 }
 
 .avatar-wrapper.img-1::before {
-  background-image: url("img/avatar_1.jpeg");
+  background-image: url("img/avatar_1.webp");
 }
 
 .avatar-wrapper.img-2::before {
-  background-image: url("img/avatar_4.png");
+  background-image: url("img/avatar_4.webp");
 }
 
 .avatar-wrapper.img-3::before {
-  background-image: url("img/avatar_3.jpeg");
+  background-image: url("img/avatar_3.webp");
 }
 
 .author-img-container {
