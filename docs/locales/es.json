@@ -45,8 +45,8 @@
   "tie_down": {
     "header": "¿Qué es un Sistema de Correas de Sujeción y Por Qué Lo Necesitas?",
     "protect": {
-      "header": "Protege Tu Hogar Hoy Mismo",
-      "description": "Bienvenido a Hurricane Solutions, donde nuestros profesionales se dedican a proteger tu casa móvil de huracanes e inundaciones. ¡No esperes a la próxima tormenta, actúa ahora para asegurar tu hogar!"
+      "header": "Probando cada anclaje",
+      "description": "Nos esforzamos al máximo en probar cada una de nuestras conexiones para garantizar que cumplan con los más altos estándares de resistencia y durabilidad."
     },
     "expert": {
       "header": "Soluciones Expertas",
@@ -106,16 +106,21 @@
     "header": "¡Protege tu HOGAR hoy!",
     "description": "Cuéntanos lo que necesitas y te proporcionaremos la mejor protección para tu propiedad. ¡Obtén una cotización personalizada ahora!",
     "form": {
+      "step1": "1. Datos personales",
+      "step2": "2. Servicio solicitado (opcional)",
+      "success-header": "¡Gracias!",
+      "success-description": "Tu mensaje ha sido enviado con éxito.",
       "first_name": "Nombre",
       "last_name": "Apellido",
       "phone": "Número de Teléfono",
       "email": "Correo Electrónico",
       "zipcode": "Código Postal",
       "select_product": "Selecciona productos:",
-      "house": "Correas de Sujeción (barco, RV, cobertizo, casa)",
-      "boat": "Persianas Contra Huracanes",
-      "rv": "Ventanas y Puertas Antimpacto",
-      "gates": "Puertas y Cercas",
+      "tieDown": "Correas de Sujeción (barco, RV, cobertizo, casa)",
+      "hurricaneShutters": "Persianas Contra Huracanes",
+      "impactWindowsDoors": "Ventanas y Puertas Antimpacto",
+      "gatesFences": "Puertas y Cercas",
+      "message": "Mensaje",
       "width": "Ancho",
       "height": "Alto",
       "length": "Largo",

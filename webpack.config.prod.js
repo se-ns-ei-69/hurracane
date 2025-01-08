@@ -7,10 +7,12 @@ module.exports = merge(common, {
   plugins: [
     new CopyPlugin({
       patterns: [
+        { from: 'mailer.php', to: 'mailer.php' },
         { from: 'img', to: 'img' },
         { from: 'locales', to: 'locales' },
         { from: 'style.css', to: 'style.css' },
         { from: 'js/vendor', to: 'js/vendor' },
+        { from: 'js/form.js', to: 'js/form.js' },
         { from: 'icon.svg', to: 'icon.svg' },
         { from: 'favicon.ico', to: 'favicon.ico' },
         { from: 'robots.txt', to: 'robots.txt' },

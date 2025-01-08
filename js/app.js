@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ctaButtonObserver.observe(ctaButton);
 
   // Шаги формы
+  const step1 = document.getElementById('step1');
   const steps = document.querySelectorAll(".form-step");
   const progressSteps = document.querySelectorAll(".progress-step");
   let currentStep = 0;
@@ -80,12 +81,46 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   document.querySelectorAll(".next-step").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      if (currentStep < steps.length - 1) {
-        currentStep++;
-        showStep(currentStep);
-      }
-    });
+
+    if (currentStep < steps.length - 1) {
+      btn.addEventListener("click", () => {
+        const inputs = step1.querySelectorAll('input');
+        let valid = true;
+
+        for (const input of inputs) {
+          if (!input.checkValidity()) {
+            valid = false;
+            input.reportValidity();
+            break;
+          }
+        }
+
+        // inputs.forEach((input) => {
+        //   if (!input.checkValidity()) {
+        //     console.log('input', input);
+        //     valid = false;
+        //     input.reportValidity();
+        //   }
+        // });
+        if (valid) {
+          currentStep++;
+          showStep(currentStep);
+        }
+        // if (currentStep < steps.length - 1) {
+        //   currentStep++;
+        //   showStep(currentStep);
+        // }
+      });
+
+    }
+
+
+    // btn.addEventListener("click", () => {
+    //   if (currentStep < steps.length - 1) {
+    //     currentStep++;
+    //     showStep(currentStep);
+    //   }
+    // });
   });
 
   document.querySelectorAll(".prev-step").forEach((btn) => {
@@ -187,14 +222,23 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
+  const selectedProducts = document.getElementById('selected-products');
   const checkboxes = dropdown?.querySelectorAll('input[type="checkbox"]');
   checkboxes?.forEach((checkbox) => {
     checkbox.addEventListener("change", () => {
-      const selectedServices = Array.from(checkboxes)
-        .filter((cb) => cb.checked)
-        .map((cb) => cb.value);
-      console.log("Выбранные услуги:", selectedServices);
+      const selected = Array.from(checkboxes)
+        .filter((input) => input.checked)
+        .map((input) => i18next.t(input.dataset.i18n));
+      selectedProducts.textContent = selected.length
+        ? selected.join(', ')
+        : i18next.t('contact.form.select_product');
+      selectedProducts.title = selected.length ? selected.join(', ')
+        : "";
+
+      // const selectedServices = Array.from(checkboxes)
+      //   .filter((cb) => cb.checked)
+      //   .map((cb) => cb.value);
+      // console.log('selectedServices', selectedServices)
     });
   });
 }, { once: true });

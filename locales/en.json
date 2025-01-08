@@ -45,8 +45,8 @@
   "tie_down": {
     "header": "What is a Tie-Down Straps System and Why You Need It",
     "protect": {
-      "header": "Protect Your Home Today",
-      "description": "Welcome to Hurricane Solutions, where our skilled professionals are committed to protecting your mobile home from hurricanes and flooding. Don’t wait for the next storm—act now to secure your home and safeguard what matters most!"
+      "header": "Testing Each Anchor",
+      "description": "We take great care in testing each of our connections to ensure they meet the highest standards of strength and durability."
     },
     "expert": {
       "header": "Expert Solutions",
@@ -106,16 +106,21 @@
     "header": "Protect Your HOME today!",
     "description": "Tell us what you need, and we'll provide the best protection for your property. Get a custom quote now!",
     "form": {
+      "step1": "1. Personal data",
+      "step2": "2. Service Inquired (optional)",
+      "success-header": "Thank you!",
+      "success-description": "Your message has been sent successfully.",
       "first_name": "First Name",
       "last_name": "Last Name",
       "phone": "Phone number",
       "email": "Email",
       "zipcode": "Zip code",
       "select_product": "Select products:",
-      "house": "Tie Down (boat, rv, shed, house)",
-      "boat": "Hurricane Shutters",
-      "rv": "Impact Windows and Doors",
-      "gates": "Gates and Fences",
+      "tieDown": "Tie Down (boat, rv, shed, house)",
+      "hurricaneShutters": "Hurricane Shutters",
+      "impactWindowsDoors": "Impact Windows and Doors",
+      "gatesFences": "Gates and Fences",
+      "message": "Message",
       "width": "Width",
       "height": "Height",
       "length": "Length",
